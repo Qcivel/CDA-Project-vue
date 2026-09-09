@@ -34,8 +34,13 @@ const router = createRouter({
         },
         {
             path: "/vBind",
-            name: "notfound",
+            name: "vBind",
             component: ()=> import("../views/VBind.vue")
+        },
+        {
+            path: "/eventBinding",
+            name: "eventBinding",
+            component: ()=> import("../views/EventBinding.vue")
         },
     ]
 });

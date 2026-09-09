@@ -21,7 +21,7 @@
 <script setup lang="js">
 import { ref } from "vue";
 
-let img = ref("https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp");
+let img = ref("https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp");
 let alt = ref("Shoes")
 let nom = ref("Dr Mario");
 let age = ref(32)
