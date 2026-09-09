@@ -18,8 +18,7 @@
                 </details>
             </li>
         </ul>
-    </div>
-    <div class="flex-none">
+    
         <ul class="menu menu-horizontal px-1">
             <li>
                 <details>
@@ -27,6 +26,7 @@
                         <ul class="bg-base-100 rounded-t-none p-2">
                             
                             <li><a><RouterLink to="/textInterpolation">Text Interpolation</RouterLink></a></li>
+                            <li><a><RouterLink to="/VBind">La directive v-bind</RouterLink></a></li>
                         </ul>
                 </details>
             </li>

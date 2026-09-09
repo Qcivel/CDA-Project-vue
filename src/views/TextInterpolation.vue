@@ -25,8 +25,8 @@
                         <td>{{ unTableau }}</td>
                     </tr>
                     <tr>
-                        <td>unTableau</td>
-                        <td>{{ unTableau0 }}</td>
+                        <td>unTableau index 0</td>
+                        <td>{{ unTableau[0] }}</td>
                     </tr>
                     <tr>
                         <td>unObjet.name</td>
@@ -60,7 +60,7 @@ const unLivre = ref("Steven Seagal");
 const isOnline = ref(true);
 const unNombre = ref(8888);
 const unTableau = [1,3,5];
-const unTableau0 = unTableau[0];
+
 const unObjet = {'name':"Cool", 'tel': '060503030'};
 const fonctionTest = () =>{
     return 'Hello World';

@@ -32,6 +32,11 @@ const router = createRouter({
             name: "notfound",
             component: ()=> import("../views/TextInterpolation.vue")
         },
+        {
+            path: "/vBind",
+            name: "notfound",
+            component: ()=> import("../views/VBind.vue")
+        },
     ]
 });
 export default router;
