@@ -30,6 +30,7 @@
                             <li><a><RouterLink to="/eventBinding">TP Event Binding</RouterLink></a></li>
                             <li><a><RouterLink to="/dynamicStyling">TP Dynamic Styling</RouterLink></a></li>
                             <li><a><RouterLink to="/watchList">TP WatchList</RouterLink></a></li>
+                            <li><a><RouterLink to="/cycleDeVie">TP Cycle de la vie</RouterLink></a></li>
                         </ul>
                 </details>
             </li>
