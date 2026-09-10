@@ -57,6 +57,11 @@ const router = createRouter({
             name: "cycleDeVie",
             component: ()=> import("../views/CycleDeVie.vue")
         },
+        {
+            path: "/compteurWatcher",
+            name: "compteurWatcher",
+            component: ()=> import("../views/CompteurWatcher.vue")
+        },
     ]
 });
 export default router;

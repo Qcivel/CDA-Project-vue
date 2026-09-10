@@ -1,24 +1,50 @@
 <template>
-    <h1>Les API</h1>
-    <div>
-        <h2> Les pokemon :</h2>
-        <p v-for="(value,index) in pokemonList" :key="index">
-            <ul>
-                <li class="badge badge-info">{{ value.name }}</li>
-            </ul>
-        </p>
-        <h2>La méteo :</h2>
-         <!-- <p > température max : {{ meteo.fcst_day_0.tmax}} °C</p>
-        <p > température min : {{ meteo.fcst_day_0.tmin}} °C</p>
-        <p > température actuelle : {{ meteo.current_condition.tmp}} °C</p>
-        <p > Condition méteo : {{ meteo.fcst_day_0.condition}} </p>  -->
-        <h2>Digimons :</h2>
-        <p v-for="(value,index) in digimon" :key="index">
-            <ul>
-                <li class="badge badge-info">{{ value.name }}</li>
-                <img :src="value.image" alt="">
-            </ul>
-        </p>
+    <div class="max-w-4xl mx-auto px-6 py-10">
+        <h1 class="text-3xl font-bold mb-8">Les API</h1>
+
+        <!-- Pokémon -->
+        <div class="card bg-base-200 shadow mb-6">
+            <div class="card-body">
+                <h2 class="card-title text-xl mb-4">⚡ Les pokemon :</h2>
+                <div class="flex flex-wrap gap-2">
+                    <span v-for="(value, index) in pokemonList" :key="index" class="badge badge-info badge-lg">
+                        {{ value.name }}
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- Météo -->
+        <div class="card bg-base-200 shadow mb-6">
+            <div class="card-body">
+                <h2 class="card-title text-xl mb-4">🌤️ La météo :</h2>
+                <!-- <p > température max : {{ meteo.fcst_day_0.tmax}} °C</p>
+                <p > température min : {{ meteo.fcst_day_0.tmin}} °C</p>
+                <p > température actuelle : {{ meteo.current_condition.tmp}} °C</p>
+                <p > Condition météo : {{ meteo.fcst_day_0.condition}} </p> -->
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- Digimons -->
+        <div class="card bg-base-200 shadow mb-6">
+            <div class="card-body">
+                <h2 class="card-title text-xl mb-4">🦕 Digimons :</h2>
+                <div class="flex flex-wrap gap-6">
+                    <div v-for="(value, index) in digimon" :key="index" class="flex flex-col items-center gap-2">
+                        <div class="avatar">
+                            <div class="w-24 rounded-xl">
+                                <img :src="value.image" :alt="value.name" />
+                            </div>
+                        </div>
+                        <span class="badge badge-warning">{{ value.name }}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </template>
 
@@ -66,7 +92,7 @@ async function getDigimons() {
     }
 }
 
-      
+
 onMounted(() => {
     getPokemon();
     // getMeteo();

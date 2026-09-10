@@ -4,6 +4,7 @@
     <p>Le nombre est : {{ nbr }}</p>
     <button class="btn btn-primary" @click="countPlus">+</button>
   </div>
+  <p>{{ afficherNameUser() }}</p>
 </template>
 
 <script setup lang='js'>
@@ -11,8 +12,16 @@ import { ref } from 'vue'
 
 const nbr = ref(0);
 const isDisabled = ref(false);
+let username = ref("");
 
-
+function afficherNameUser(){
+    console.log("Console ? ");
+    if(username.value == ""){
+        return "test";
+    }else{
+        return "autre test";
+    }
+}
 
 function countPlus() {
     if(nbr.value >= 0){
