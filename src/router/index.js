@@ -42,6 +42,11 @@ const router = createRouter({
             name: "eventBinding",
             component: ()=> import("../views/EventBinding.vue")
         },
+        {
+            path: "/dynamicStyling",
+            name: "dynamicStyling",
+            component: ()=> import("../views/DynamicStyling.vue")
+        },
     ]
 });
 export default router;

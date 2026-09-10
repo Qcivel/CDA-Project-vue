@@ -28,6 +28,7 @@
                             <li><a><RouterLink to="/textInterpolation">Text Interpolation</RouterLink></a></li>
                             <li><a><RouterLink to="/VBind">La directive v-bind</RouterLink></a></li>
                             <li><a><RouterLink to="/eventBinding">TP Event Binding</RouterLink></a></li>
+                            <li><a><RouterLink to="/dynamicStyling">TP Dynamic Styling</RouterLink></a></li>
                         </ul>
                 </details>
             </li>
