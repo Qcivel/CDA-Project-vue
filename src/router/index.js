@@ -47,6 +47,11 @@ const router = createRouter({
             name: "dynamicStyling",
             component: ()=> import("../views/DynamicStyling.vue")
         },
+        {
+            path: "/watchList",
+            name: "watchList",
+            component: ()=> import("../views/WatchList.vue")
+        },
     ]
 });
 export default router;

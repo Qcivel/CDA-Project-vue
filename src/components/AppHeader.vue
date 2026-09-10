@@ -29,6 +29,7 @@
                             <li><a><RouterLink to="/VBind">La directive v-bind</RouterLink></a></li>
                             <li><a><RouterLink to="/eventBinding">TP Event Binding</RouterLink></a></li>
                             <li><a><RouterLink to="/dynamicStyling">TP Dynamic Styling</RouterLink></a></li>
+                            <li><a><RouterLink to="/watchList">TP WatchList</RouterLink></a></li>
                         </ul>
                 </details>
             </li>

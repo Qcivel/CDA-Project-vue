@@ -1,8 +1,8 @@
 <template>
     <div class="card">
         <div class="updateStyle">
-            <button :style="{backgroundColor: btn1=== true ? 'red':'aqua' }" @click="switchStyle1()"> Carte 1</button>
-            <button :style="{backgroundColor: btn2=== true ? 'pink':'green' }" @click="switchStyle2()"> Carte 2</button>
+            <button :style="{backgroundColor: btn1 === true ? 'red':'aqua' }" @click="switchStyle1()"> Carte 1</button>
+            <button :style="{backgroundColor: btn2 === true ? 'pink':'green' }" @click="switchStyle2()"> Carte 2</button>
         </div>
         <div class="updateStyle">
             <button :class="['btn', {changeClass1: btn3 }]" @click="switchClass1()"> Carte 1</button>
@@ -25,7 +25,6 @@ function switchStyle1(){
 function switchStyle2(){
     btn2.value = !btn2.value;
 }
-
 function switchClass1(){
     btn3.value = !btn3.value;
 }
