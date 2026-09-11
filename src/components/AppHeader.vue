@@ -32,6 +32,9 @@
                             <li><a><RouterLink to="/watchList">TP WatchList</RouterLink></a></li>
                             <li><a><RouterLink to="/cycleDeVie">TP Cycle de la vie</RouterLink></a></li>
                             <li><a><RouterLink to="/compteurWatcher">TP Compteur Watcher</RouterLink></a></li>
+                            <li><a><RouterLink to="/formLogin">TP Formulaire de connexion</RouterLink></a></li>
+                            <li><a><RouterLink to="/profiles">TP Liste des profils</RouterLink></a></li>
+                            <li><a><RouterLink to="/catalogueProduit">TP Catalogue Produit</RouterLink></a></li>
                         </ul>
                 </details>
             </li>

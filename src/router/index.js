@@ -62,6 +62,26 @@ const router = createRouter({
             name: "compteurWatcher",
             component: ()=> import("../views/CompteurWatcher.vue")
         },
+        {
+            path: "/formLogin",
+            name: "formLogin",
+            component: ()=> import("../views/FormLogin.vue")
+        },
+        {
+            path: "/profiles",
+            name: "profiles",
+            component: ()=> import("../views/ProfilListView.vue")
+        },
+        {
+            path: "/profiles/:id",
+            name: "profile-detail",
+            component: ()=> import("../views/ProfileDetail.vue")
+        },
+        {
+            path: "/catalogueProduit",
+            name: "catalogueProduit",
+            component: ()=> import("../views/CatalogueProduit.vue")
+        },
     ]
 });
 export default router;
