@@ -35,6 +35,7 @@
                             <li><a><RouterLink to="/formLogin">TP Formulaire de connexion</RouterLink></a></li>
                             <li><a><RouterLink to="/profiles">TP Liste des profils</RouterLink></a></li>
                             <li><a><RouterLink to="/catalogueProduit">TP Catalogue Produit</RouterLink></a></li>
+                            <li><a><RouterLink to="/exoProps">TP Les props</RouterLink></a></li>
                         </ul>
                 </details>
             </li>

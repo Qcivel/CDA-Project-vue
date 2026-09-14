@@ -39,7 +39,7 @@ let profils = ref([
         nom: "Marie Lefèvre",
         metier: "Designer UX/UI"
     }
-])
+]);
 
 </script>
 

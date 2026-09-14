@@ -82,6 +82,11 @@ const router = createRouter({
             name: "catalogueProduit",
             component: ()=> import("../views/CatalogueProduit.vue")
         },
+        {
+            path: "/exoProps",
+            name: "exoProps",
+            component: ()=> import("../views/ExoProps.vue")
+        },
     ]
 });
 export default router;
