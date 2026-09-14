@@ -1,6 +1,6 @@
 <template>
-    <div class="aura aura-rainbow">
-        <div class="card bg-base-100 w-96 shadow-sm aura aura-holo " >
+    <div class="aura hover-3d" :class="{ 'aura-rainbow': premium }">
+        <div class="card bg-base-100 w-96 shadow-sm aura" :class="{ 'aura-holo': premium }" >
             <div >
                 <h1 class="card-title ">Composant OneFriend.vue</h1>
             </div>
@@ -23,7 +23,7 @@
 import { ref, computed, watch, onMounted, onUpdated, onBeforeUnmount } from 'vue'
 
 // v-model binding (Vue 3.4+)
-
+let classBtn  = "";
 
 const props = defineProps({
     title:{
@@ -33,8 +33,8 @@ const props = defineProps({
     } ,
     id:{
         String,
-        required:true,
-        default:"ID"
+        
+        default: "id"
     } ,
     telephone:{
         String,
@@ -43,12 +43,12 @@ const props = defineProps({
     },
     email:{
         String,
-        required:true,
+        
         default:"Jacque.Mesrine@gangster.fr" 
     },
     premium:{
         String,
-        required:true,
+        
         default:false
     } 
 });
