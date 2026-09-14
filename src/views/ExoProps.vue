@@ -1,7 +1,7 @@
 <template>
     
     <div>
-        <OneFriend v-for="value in lesAmis" :id=value.id :title=value.name :telephone=value.phone :email=value.email :premium=value.premium :key="value.id"/>
+        <OneFriend v-for="value in lesAmis" :id=value.id :title=value.name :telephone=value.phone :email=value.email :premium=value.premium :key="value.id" @premium="onFriendsPremium" @deleteFriend="deleteMyFriend" />
     </div>
 </template>
 
@@ -39,7 +39,7 @@ const lesAmis = ref([
         premium: true
     },
     {
-        id: 'yoyoyo',
+        id: 'yoyo',
         name: "JAROD",
         phone: '+338765477',
         email: 'jAROD@seagal.com',
@@ -61,7 +61,22 @@ const lesAmis = ref([
     }
 ]);
 
-</script>
 
+function onFriendsPremium(id){
+    const ami = lesAmis.value.find(e => e.id === id);
+    
+    ami.premium = !ami.premium;
+   
+}
+function deleteMyFriend(id){
+    const ami = lesAmis.value.find(e => e.id === id);
+    console.log(ami);
+    
+    lesAmis.value.splice(id,1);
+   
+}
+
+
+</script>
 <style scoped lang="css">
 </style>
