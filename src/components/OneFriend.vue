@@ -1,10 +1,10 @@
 <template>
-    <div class="card bg-base-100 w-96 shadow-sm" >
+    <div class="card bg-base-100 w-96 shadow-sm aura" >
         <div>
-            <h1>Composant OneFriend.vue</h1>
+            <h1 class="card-title">Composant OneFriend.vue</h1>
         </div>
         <div class="card-body" >
-            <h2 class="card-title"> id {{ id }}</h2>
+            <h2  class="badge badge-error"> id: {{ id }}</h2>
             <p>{{ title }} </p>
             <p class="badge badge-primary">📞 {{ telephone }}  </p>
             <p class="badge badge-secondary">✉ {{ email }}</p>
@@ -20,11 +20,31 @@ import { ref, computed, watch, onMounted, onUpdated, onBeforeUnmount } from 'vue
 const model = defineModel({ default: '' });
 
 const props = defineProps({
-    title: String,
-    id: String,
-    telephone: String,
-    email: String,
-    premium: String
+    title:{
+        String,
+        required:true,
+        default:"Titre"
+    } ,
+    id:{
+        String,
+        required:true,
+        default:"ID"
+    } ,
+    telephone:{
+        String,
+        required:true,
+        default:17,
+    },
+    email:{
+        String,
+        required:true,
+        default:"Jacque.Mesrine@gangster.fr" 
+    },
+    premium:{
+        String,
+        required:true,
+        default:false
+    } 
 
 });
 
