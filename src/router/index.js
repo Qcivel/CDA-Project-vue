@@ -87,6 +87,21 @@ const router = createRouter({
             name: "exoProps",
             component: ()=> import("../views/ExoProps.vue")
         },
+        {
+            path: "/firebaseArticleManager",
+            name: "firebaseArticleManager",
+            component: ()=> import("../views/FirebaseArticleManager.vue")
+        },
+        {
+            path: "/firebaseArticleManager",
+            name: "firebaseArticleManager",
+            component: ()=> import("../views/FirebaseArticleManager.vue")
+        },
+        {
+            path: "/firebasePictureManager",
+            name: "firebasePictureManager",
+            component: ()=> import("../views/FirebasePictureManager.vue")
+        },
     ]
 });
 export default router;
