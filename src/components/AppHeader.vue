@@ -37,6 +37,8 @@
                             <li><a><RouterLink to="/catalogueProduit">TP Catalogue Produit</RouterLink></a></li>
                             <li><a><RouterLink to="/exoProps">TP Les props</RouterLink></a></li>
                             <li><a><RouterLink to="/firebaseArticleManager">Firebase Article Manager</RouterLink></a></li>
+                            <li><a><RouterLink to="/countPinia">Count Pinia</RouterLink></a></li>
+                            <li><a><RouterLink to="/taskManager">Eval Vue</RouterLink></a></li>
                         </ul>
                 </details>
             </li>

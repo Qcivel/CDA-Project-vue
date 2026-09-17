@@ -102,6 +102,16 @@ const router = createRouter({
             name: "firebasePictureManager",
             component: ()=> import("../views/FirebasePictureManager.vue")
         },
+        {
+            path: "/countPinia",
+            name: "countPinia",
+            component: ()=> import("../views/CountPinia.vue")
+        },
+        {
+            path: "/taskManager",
+            name: "taskManager",
+            component: ()=> import("../views/TaskManager.vue")
+        },
     ]
 });
 export default router;

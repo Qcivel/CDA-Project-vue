@@ -1,9 +1,12 @@
 <template>
-    <h1>Home</h1>
+    <h1 style="height: 5000px;">Home</h1>
+   
+    <BackToTop/>
 </template>
 
 <script setup lang='js'>
 import { ref } from 'vue'
+import BackToTop from '../components/BackToTop.vue';
 
 
 
